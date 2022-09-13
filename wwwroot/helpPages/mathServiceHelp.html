@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service /api/maths - Documentation</title>
+</head>
+<body style="background-color: darkkhaki; color: darkblue; text-align: center;">
+    <h1>Service /api/maths - Documentation</h1>
+
+    <h3>Besoin d'aide?</h3>
+    <h4>Voici la liste des différentes opérations possibles;</h4>
+    <div style="font-weight: bolder;">? op = + (ou un espace) & x = (nombre entier) & y = (nombre entier)<br>
+        return {"op":"+", "x":"nombre entier", "y":"nombre entier", "value":"x + y"}
+    </div>
+    <br>
+    
+    <div style="font-weight: bolder;">? op = - & x = (nombre entier) & y = (nombre entier)<br>
+        return {"op":"-", "x":"nombre entier", "y":"nombre entier", "value":"x - y"}
+    </div>
+    <br>
+
+    <div style="font-weight: bolder;">? op = * & x = (nombre entier) & y = (nombre entier)<br>
+        return {"op":"*", "x":"nombre entier", "y":"nombre entier", "value":"x * y"}
+    </div>
+    <br>
+
+    <div style="font-weight: bolder;">? op = / & x = (nombre entier) & y = (nombre entier)<br>
+        return {"op":"/", "x":"nombre entier", "y":"nombre entier", "value":"x / y"}
+    </div>
+    <br>
+
+    <div style="font-weight: bolder;">? op = % & x = (nombre entier) & y = (nombre entier)<br>
+        return {"op":"%", "x":"nombre entier", "y":"nombre entier", "value":"x % y"}
+    </div>
+    <br>
+
+    <div style="font-weight: bolder;">? op = ! & n = (nombre entier)<br>
+        return {"op":"!", "n":"nombre entier", "value":"n!"}
+    </div>
+    <br>
+
+    <div style="font-weight: bolder;">? op = p & n = (nombre entier)<br>
+        return {"op":"p", "n":"nombre entier", "value":"true si n est un nombre premier"}
+    </div>
+    <br>
+
+    <div style="font-weight: bolder;">? op = np & n = (nombre entier)<br>
+        return {"op":"n", "n":"nombre entier", "value":"Le nombre premier le plus proche"}
+    </div>
+    <br>
+</body>
+</html>
