@@ -48,9 +48,9 @@ module.exports =
                         break;
 
                         case('/'):
-                        x = this.HttpContext.path.params.x;
-                        y = this.HttpContext.path.params.y;
-                        this.HttpContext.path.params.value = parseInt(x) / parseInt(y);
+                        x = parseInt(this.HttpContext.path.params.x);
+                        y = parseInt(this.HttpContext.path.params.y);
+                        this.HttpContext.path.params.value = x / y;
                         if(y === 0 || x === 0){
                             this.HttpContext.path.params.value = "Impossible de diviser un nombre par 0";
                         }
