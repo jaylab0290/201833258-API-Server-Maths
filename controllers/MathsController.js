@@ -25,6 +25,7 @@ module.exports =
                 if (params.op) {
                     switch (params.op) {
                         case (' '):
+                            params.op = '+';
                             if (Object.keys(params).length > 3) {
                                 params.error = "too many params";
                                 return this.HttpContext.response.JSON(params);
@@ -33,7 +34,6 @@ module.exports =
                                 params.error = "params missing";
                                 return this.HttpContext.response.JSON(params);
                             }
-                            params.op = '+';
                             x = parseInt(params.x);
                             y = parseInt(params.y);
                             params.value = x + y;
