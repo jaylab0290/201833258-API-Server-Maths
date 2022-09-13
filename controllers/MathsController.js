@@ -52,16 +52,18 @@ module.exports =
                         y = parseInt(this.HttpContext.path.params.y);
                         if(y === 0){
                             this.HttpContext.path.params.error = "Impossible de diviser un nombre par 0";
-                            break;
                         }
                         this.HttpContext.path.params.value = x / y;
                         this.HttpContext.response.JSON(this.HttpContext.path.params);
                         break;
 
                         case('%'):
-                        x = this.HttpContext.path.params.x;
-                        y = this.HttpContext.path.params.y;
-                        this.HttpContext.path.params.value = parseInt(x) % parseInt(y);
+                        x = parseInt(this.HttpContext.path.params.x);
+                        y = parseInt(this.HttpContext.path.params.y);
+                        if(y === 0){
+                            this.HttpContext.path.params.error = "Impossible de moduler un nombre par 0";
+                        }
+                        this.HttpContext.path.params.value = x % y;
                         this.HttpContext.response.JSON(this.HttpContext.path.params);
                         break;
 
