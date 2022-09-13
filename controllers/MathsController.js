@@ -51,7 +51,7 @@ module.exports =
                         x = parseInt(this.HttpContext.path.params.x);
                         y = parseInt(this.HttpContext.path.params.y);
                         this.HttpContext.path.params.value = x / y;
-                        if(y === 0 || x === 0){
+                        if(y === 0){
                             this.HttpContext.path.params.value = "Impossible de diviser un nombre par 0";
                         }
                         this.HttpContext.response.JSON(this.HttpContext.path.params);
