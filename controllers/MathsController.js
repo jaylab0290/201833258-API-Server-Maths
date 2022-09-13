@@ -30,7 +30,7 @@ module.exports =
                                 params.error = "too many params";
                                 return this.HttpContext.response.JSON(params);
                             }
-                            if(!params.x || !params.y){
+                            if (!params.x || !params.y) {
                                 params.error = "params missing";
                                 return this.HttpContext.response.JSON(params);
                             }
@@ -45,7 +45,7 @@ module.exports =
                                 params.error = "too many params";
                                 return this.HttpContext.response.JSON(params);
                             }
-                            if(!params.x || !params.y){
+                            if (!params.x || !params.y) {
                                 params.error = "params missing";
                                 return this.HttpContext.response.JSON(params);
                             }
@@ -60,7 +60,7 @@ module.exports =
                                 params.error = "too many params";
                                 return this.HttpContext.response.JSON(params);
                             }
-                            if(!params.x || !params.y){
+                            if (!params.x || !params.y) {
                                 params.error = "params missing";
                                 return this.HttpContext.response.JSON(params);
                             }
@@ -75,7 +75,7 @@ module.exports =
                                 params.error = "too many params";
                                 return this.HttpContext.response.JSON(params);
                             }
-                            if(!params.x || !params.y){
+                            if (!params.x || !params.y) {
                                 params.error = "params missing";
                                 return this.HttpContext.response.JSON(params);
                             }
@@ -93,7 +93,7 @@ module.exports =
                                 params.error = "too many params";
                                 return this.HttpContext.response.JSON(params);
                             }
-                            if(!params.x || !params.y){
+                            if (!params.x || !params.y) {
                                 params.error = "params missing";
                                 return this.HttpContext.response.JSON(params);
                             }
@@ -111,7 +111,7 @@ module.exports =
                                 params.error = "too many params";
                                 return this.HttpContext.response.JSON(params);
                             }
-                            if(!params.n){
+                            if (!params.n) {
                                 params.error = "params missing";
                                 return this.HttpContext.response.JSON(params);
                             }
@@ -133,7 +133,7 @@ module.exports =
                                 params.error = "too many params";
                                 return this.HttpContext.response.JSON(params);
                             }
-                            if(!params.n){
+                            if (!params.n) {
                                 params.error = "params missing";
                                 return this.HttpContext.response.JSON(params);
                             }
@@ -147,7 +147,7 @@ module.exports =
                                 params.error = "too many params";
                                 return this.HttpContext.response.JSON(params);
                             }
-                            if(!params.n){
+                            if (!params.n) {
                                 params.error = "params missing";
                                 return this.HttpContext.response.JSON(params);
                             }
